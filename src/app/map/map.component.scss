@@ -1,0 +1,97 @@
+ul {
+    list-style-type: none;
+    margin: 0;padding: 0;
+
+    li {
+        background: rgb(238, 238, 238);
+        padding: 2em;
+        border-radius: 4px;
+        margin-bottom: 7px;
+        display: grid;
+        grid-template-columns: 60px auto;
+
+        p {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+}
+
+#info,
+.chart-wrapper .outer-box,
+.ol-popup,
+.ol-popup-closer,
+.toolTip {
+    position: absolute
+}
+.ol-popup {
+    background-color: #fff;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .2));
+    border-radius: 10px;
+    border: 5px solid #449bca;
+    bottom: 12px;
+    left: -30px;
+}
+.ol-popup:after,
+.ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none
+}
+.ol-popup:after {
+    border-top-color: #fff;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px
+}
+.ol-popup:before {
+    border-top-color: #ccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px
+}
+.ol-popup-closer {
+    text-decoration: none;
+    top: 2px;
+    right: 8px
+}
+.ol-popup-closer:after {
+    content: "✖"
+}
+.drawlot {
+    top: 5.5em;
+    left: 0.5em;
+}
+.satellite {
+    top: 8.5em;
+    left: 0.5em;
+}
+.ol-search ul {
+    color: #333;
+    font-size:0.85em;
+    max-width: 21em;
+}
+.ol-search ul i {
+    display: block;
+    color: #333;
+    font-size:0.85em;
+}
+.info {
+    display: inline-block;
+    width: 100%;
+}
+.info a img {
+    height: 100px;
+    margin-right: .5em;
+    float: left;
+}

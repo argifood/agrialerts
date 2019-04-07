@@ -1,0 +1,18 @@
+<jqxToolbar [theme]="'darkblue'" [width]="'100%'" [height]="35" [minimizeWidth]="200" 
+[initTools]="initTools" [tools]="tools"></jqxToolbar>
+<jqxTabs [theme]="'darkblue'"  [height]="560">
+    <ul>
+        <li style="margin-left: 30px">Προειδοποιήσεις</li>
+        <li>Συμβάντα</li>
+    </ul>
+    <div style="overflow: hidden">
+        <jqxGrid [theme]="'darkblue'" #myGrid [width]="'100%'" [autoheight]="true" [showfilterrow]="true" [filterable]="true" 
+[sortable]="true" [columnsresize]="true" [pagesize]=10 [source]="dataAdapter" 
+[columns]="columns" [groupable]="true" [pageable]="true" style="margin:0;padding:0;"></jqxGrid>
+    </div>
+    <div style="overflow: hidden">
+        <jqxGrid [theme]="'darkblue'" #myGrid1 [width]="'100%'" [autoheight]="true" [showfilterrow]="true" [filterable]="true" 
+[sortable]="true" [columnsresize]="true" [pagesize]=10 [source]="dataAdapterobs" 
+[columns]="columns" [groupable]="true" [pageable]="true" style="margin:0;padding:0;"></jqxGrid>
+    </div>
+</jqxTabs>

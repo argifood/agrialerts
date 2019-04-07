@@ -1,0 +1,6 @@
+
+<div class="col-sm-12" *ngIf="!authService.isLoggedIn">
+  <div class="jumbotron text-center">
+    <h2>Get More Alerts By <a *ngIf="!authService.isLoggedIn" (click)="authService.login()">Log In</a></h2>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+{
+  "extends": "../tsconfig.json",
+  "skipLibCheck": true,
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true, 
+    "esModuleInterop": true,
+    "types": [],
+    "importHelpers": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "main.ts",
+    "polyfills.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxinput.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxbuttons.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxcheckbox.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxpanel.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxradiobutton.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxdropdownbutton.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxswitchbutton.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxcombobox.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxdatetimeinput.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxdropdownlist.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxwindow.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxtabs.ts",
+    "C:/Users/SJHyper/Downloads/agrialerts/node_modules/jqwidgets-scripts/jqwidgets-ts/angular_jqxtoolbar.ts"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

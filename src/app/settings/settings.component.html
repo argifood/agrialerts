@@ -1,0 +1,23 @@
+<div class="container" style="background-color: #449bca;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#3c91c2),to(#449bca));color:#fff;">
+  <div class="row no-gutters">
+    <h5 class="col-12">Ρυθμίσεις προειδοποιήσεων</h5>
+    <div class="col-12">
+      <b>Εύρος ημερομηνιών</b>
+      <jqxDateTimeInput #myDateTimeInput [width]="'100%'" [height]="40" [selectionMode]="'range'"></jqxDateTimeInput>
+    </div>
+    <div class="col-6">
+      <b>Καλλιέργεια</b>
+      <jqxDropDownList [theme]="'material'" #myDropDownList1 (onSelect)="cropOnSelect($event)"
+          [width]="'100%'" [height]="40" [source]="dataAdapter1" [checkboxes]="true"
+          [displayMember]="'lektiko'" [valueMember]="'kalcode'">
+      </jqxDropDownList>
+    </div>
+    <div class="col-6">
+      <b>Περιοχή</b>
+      <jqxDropDownList [theme]="'material'" #myDropDownList2 (onSelect)="areaOnSelect($event)"
+          [width]="'100%'" [height]="40" [source]="dataAdapter2" [checkboxes]="true"
+          [displayMember]="'lektiko'" [valueMember]="'kalcode'"></jqxDropDownList>
+    </div>
+  </div>
+</div>

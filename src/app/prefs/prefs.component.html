@@ -1,0 +1,34 @@
+<ng-template [ngIf]="authService.isLoggedIn">
+	<h3 class="text-center">Προτιμήσεις</h3>
+
+	<div class="col-lg-12 com-md-12, col-sm-12, col-xs-12">
+		<div class="col-lg-9 com-md-9, col-sm-9, col-xs-hidden">
+		</div>
+		<div class="col-lg-3 com-md-3, col-sm-3, col-xs-12">
+			<a class="form-control btn btn-primary" [routerLink]="['add']">Προσθήκη</a>
+		</div>
+		<table class="table table-hover table-striped">
+			<thead>
+				<tr>
+					<th>Καλλιέργεια ή εκτροφή</th>
+					<th>Περιφέρεια</th>
+					<th>Περιφερειακή ενότητα</th>
+					<th>Κοινότητα</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody *ngFor="let pref of prefs">
+				<tr>
+					<td><a [routerLink]="['edit', pref.user_pref_id]">{{ pref.agritype_name }}</a></td>
+					<td>{{ pref.nuts2_name }}</td>
+					<td>{{ pref.nuts3_name }}</td>
+					<td>{{ pref.nuts5_name }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</ng-template>
+
+<div class="col-lg-12 com-md-12, col-sm-12, col-xs-12 alert alert-danger" *ngIf="error">
+  <strong>Oops!</strong> An error occurred fetching data. Please try again.
+</div>
